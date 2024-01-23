@@ -1,0 +1,14 @@
+Challenge1 application:
+
+- Clonar proyecto
+- Navegar al directorio "docker" dentro del proyecto y ejecutar comando <docker-compose up -d>
+- Navegar al directorio src y ejecutar comandos maven: mvn clean install
+- Crear nueva Run Config apuntando al directorio challenge1
+- Correr aplicación
+
+Notas:
+- La base de datos local, necesaria para hacer las pruebas, se creó a través de MongoCompass con el string de conexión: "mongodb://mainuser:mainpass@localhost:27017/?authSource=admin".
+Se recomienda usar la misma aplicación.
+- Por brevedad, se colocaron los datos de usuario y password de la base de datos como propiedades dentro del application.properties, pero
+lo ideal es que dichos datos no estén entre las propiedades sino encriptados o manejados como variable de entorno, por ejemplo.
+- La versión de SDK utilizada es la 17
